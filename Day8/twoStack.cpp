@@ -19,7 +19,7 @@ public:
     else return 0;
   }
   int isFull2(){
-    if(top2==MAX/2) return 1;
+    if(top2==MAX-1) return 1;
     else return 0;
   }
   int isEmpty1()
@@ -36,13 +36,13 @@ public:
   {
     top1++;
     arr[top1] = item;
-    cout<<"Pushed at "<<top1++<<endl;
+    cout<<"Pushed at "<<top1<<endl;
   }
   void push2(int item)
   {
     top2++;
     arr[top2] = item;
-    cout<<"Pushed at "<<top2++<<endl;
+    cout<<"Pushed at "<<top2<<endl;
   }
   int pop1()
   {

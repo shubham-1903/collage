@@ -120,7 +120,7 @@ int main()
         else
         {
           cout << "Odd Stack: " << endl;
-          s2.display1();
+          s2.display2();
         }
         break;
       default:

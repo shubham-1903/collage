@@ -25,12 +25,12 @@ public:
   int isEmpty1()
   {
     if(top1==-1) return 1;
-    else return -99999;
+    else return 0;
   }
   int isEmpty2()
   {
     if(top2==MAX/2-1) return 1;
-    else return -99999;
+    else return 0;
   }
   void push1(int item)
   {

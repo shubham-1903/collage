@@ -1,0 +1,4 @@
+3
+a+b*(c^d-e)^(f+g*h)-i
+a+((c-d)*e+f)*g*h
+a+((c*d)/f^e)-g/h

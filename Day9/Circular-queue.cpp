@@ -13,18 +13,18 @@ class circularQueue
 public:
   circularQueue()
   {
-    front=0;
-    rear=0;
+    front = 0;
+    rear = 0;
   }
   void enQueue(int item)
   {
-    rear=(rear+1)%MAX;
-    arr[rear]=item;
-    cout<<rear<<" rear"<<endl;
+    rear = (rear + 1) % MAX;
+    arr[rear] = item;
+    cout << rear << " rear" << endl;
   }
   int deQueue()
   {
-    front=(front+1)%MAX;
+    front = (front + 1) % MAX;
     return arr[front];
   }
   int peak()
@@ -33,7 +33,7 @@ public:
   }
   int isFull()
   {
-    if ((rear+1)%MAX == front)
+    if ((rear + 1) % MAX == front)
       return 1;
     else
       return 0;
@@ -47,26 +47,27 @@ public:
   }
   void display()
   {
-    if(rear>=front)
+    if (rear >= front)
     {
-      for(int i=front+1;i<=rear;i++)
+      for (int i = front + 1; i <= rear; i++)
       {
-        cout<<arr[i]<<" ";
+        cout << arr[i] << " ";
       }
-      cout<<endl;
+      cout << endl;
     }
-    else{
-      for(int i=front+1;i<MAX;i++)
-        cout<<arr[i]<<" ";
-      for(int i=0;i<=rear;i++)
-        cout<<arr[i]<<" ";
+    else
+    {
+      for (int i = front + 1; i < MAX; i++)
+        cout << arr[i] << " ";
+      for (int i = 0; i <= rear; i++)
+        cout << arr[i] << " ";
     }
   }
 };
 
 int main()
 {
-circularQueue q1;
+  circularQueue q1;
   cout << "Queue Operation: " << endl;
   cout << "1 for enQueue() " << endl;
   cout << "2 for deQueue() " << endl;

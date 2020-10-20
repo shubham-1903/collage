@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "files.associations": {
+    "*.json": "json",
+    "*.cpp": "cpp",
+    "iostream": "cpp",
+    "ostream": "cpp"
+  },
+  "cmake.configureOnOpen": true
+}

@@ -16,14 +16,12 @@ public:
   void enQueue(int item)
   {
     rear++;
-    arr[rear]=item;
-
+    arr[rear] = item;
   }
   int deQueue()
   {
     front++;
     return arr[front];
-    
   }
   int peak()
   {
@@ -45,11 +43,11 @@ public:
   }
   void display()
   {
-    for (int i = rear; i>=front +1; i--)
+    for (int i = rear; i >= front + 1; i--)
     {
-      cout << arr[i]<<" ";
+      cout << arr[i] << " ";
     }
-    cout<<endl;
+    cout << endl;
   }
 };
 
